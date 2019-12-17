@@ -19,15 +19,14 @@ import android.content.Intent
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-
+    var bundle = Bundle()
     fun click_champion(v: View?){
         when(v?.id) {
-            R.id.btn_aatrox -> {
-                val intent = Intent(this, champion_intro::class.java)
+            R.id.btn_aatrox ->{
+                var intent = Intent(this,champion_intro::class.java)
                 intent.putExtra("champion_name","aatrox")
                 startActivity(intent)
             }
-
         }
 
 

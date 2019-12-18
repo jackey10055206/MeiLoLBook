@@ -26,9 +26,10 @@ class HomeActivity(var champion_name : String?) : Fragment() {
         var name = champion_name
         name.toString()
         Log.i("find_me_Homeactivity",name)
-        use_this.textView.setText(name)
-        //use_this.setText("Change form Homaactivity")
-        return inflater.inflate(R.layout.champion_home,container,false)
+        val root =inflater.inflate(R.layout.champion_home,container,false)
+        var tv = root.findViewById(R.id.use_this) as TextView
+        tv.text = name
+        return root
     }
 
 

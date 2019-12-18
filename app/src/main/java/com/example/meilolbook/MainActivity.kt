@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         when(v?.id) {
             R.id.btn_aatrox ->{
                 var intent = Intent(this,champion_intro::class.java)
-                intent.putExtra("champion_name","aatrox")
+                intent.putExtra("champion_name","Aatrox")
                 startActivity(intent)
             }
         }
